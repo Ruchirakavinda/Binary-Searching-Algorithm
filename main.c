@@ -15,7 +15,31 @@ void binarySearch(int size,int arr[], int sk){
     double start=clock();
     
     
-    // avishka
+         if (arr[mid]==sk) {
+
+            found=true;
+
+            position=mid;
+
+        }
+
+        else if (arr[mid]>sk){
+
+            last=mid-1;
+
+            mid=(first+last)/2;
+
+        }
+
+        else{
+
+            first=mid+1;
+
+            mid=(first+last)/2;
+
+        }
+
+    }
     
     printf("Position is : %d \n",position);
     double end=clock();
