@@ -2,9 +2,15 @@
 #include <stdbool.h>
 
 void binarySearch(int size,int arr[], int sk){
-    
-    // nishu
-    
+
+
+    int first,last,position,mid;
+    bool found;
+    first=0;
+    last=size-1;
+    position=-1;
+    found=false;
+    mid=(first+last)/2;
     
     double start=clock();
     
