@@ -49,7 +49,31 @@ void binarySearch(int size,int arr[], int sk){
 
 int main(){
     
-    // suraji
+    int z,s,i;
+
+    printf("Enter size : ");
+
+    scanf("%d",&z);
+
+    
+
+    int a[z];
+
+    for (i=0; i<z; i++) {​​​​​​​
+
+        printf("Enter %d data : ",i);
+
+        scanf("%d",&a[i]);
+
+    }​​​​​​​
+
+    printf("Enter Search Key : ");
+
+    scanf("%d",&s);
+
+    
+
+    binarySearch(z,a,s);
     
 }
 
