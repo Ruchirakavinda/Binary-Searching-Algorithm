@@ -4,7 +4,7 @@
 void binarySearch(int size,int arr[], int sk){
 
 
-    int first,last,position,mid;
+    int first,last,position,mi;
     bool found;
     first=0;
     last=size-1;
@@ -19,13 +19,13 @@ void binarySearch(int size,int arr[], int sk){
 
             found=true;
 
-            position=mid;
+            position=mi;
 
         }
 
-        else if (arr[mid]>sk){
+        else if (arr[mi]>sk){
 
-            last=mid-1;
+            last=mi-1;
 
             mid=(first+last)/2;
 
@@ -33,7 +33,7 @@ void binarySearch(int size,int arr[], int sk){
 
         else{
 
-            first=mid+1;
+            first=mi+1;
 
             mid=(first+last)/2;
 
